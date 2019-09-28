@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h2>Parameters</h2>
+<p>
+    If you call a function with missing arguments, they are set to undefined: function math()<br />
+    You can assign a default value to the parameter like: function math(x, y)
+</p>
+<p>
+    We will use this code:<br />
+    function sayHello(name, age) {<br />
+        var name = document.getElementById("name").value;<br />
+        var age = document.getElementById("age").value;<br />
+        <br />
+        document.write (name + " is " + age + " years old.");<br />
+        }
+</p>
+<p>Enter in two variables to be used as parameters in a function</p>
+<input type="text" id="name" value="your name">
+<input type="text" id="age" value="your age">
+<button onclick="sayHello(name, age)">Try it</button>
+
+<script type = "text/javascript">
+
+        function sayHello(name, age) {
+                var name = document.getElementById("name").value;
+                var age = document.getElementById("age").value;
+
+                document.write (name + " is " + age + " years old.");
+                }
+
+</script>
+
+</body>
+</html>
