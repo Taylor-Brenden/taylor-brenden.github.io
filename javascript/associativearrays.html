@@ -14,12 +14,15 @@
             document.write(key + " = " + value + '&lt;br&gt;');<br />
         }
     </p>
+    <button onclick="assarray()">Run</button>
     <script type = "text/javascript">
+        function assarray() {
         var arr = {"Ford": "Fusion", "Chevy": "Malibu", "BMW": "M5"};
         for (var key in arr)
         {
             var value = arr[key];
             document.write(key + " = " + value + '<br>');
+        }
         }
     </script>
 
