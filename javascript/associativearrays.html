@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Associative Arrays</h2>
+    <p>An  associative array is a dynamic object that is like an array but it can have keys assigned to its values.</p>
+    <p>You create an associative array like this: var arr = { "one": 1, "two": 2, "three": 3 };</p>
+    <p>Values are called like this: arr["one"];</p>
+    <p>We will use a for in loop to list out the values of an associative array:</p>
+    <p>I created an associative array with the make of the car as the key and the model to be the value:<br />
+        var arr = {"Ford": "Fusion", "Chevy": "Malibu", "BMW": "M5"};<br />
+        for (var key in arr)<br />
+        {<br />
+            var value = arr[key];<br />
+            document.write(key + " = " + value + '&lt;br&gt;');<br />
+        }
+    </p>
+    <script type = "text/javascript">
+        var arr = {"Ford": "Fusion", "Chevy": "Malibu", "BMW": "M5"};
+        for (var key in arr)
+        {
+            var value = arr[key];
+            document.write(key + " = " + value + '<br>');
+        }
+    </script>
+
+</body>
+</html>
