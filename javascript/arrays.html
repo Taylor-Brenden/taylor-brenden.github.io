@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <h2>Arrays</h2>
+    <p>An array is a variable with multiple values stored inside.</p>
+    <p>You store an array like this: var cars = ["Ford", "Chevy", "BMW"];</p>
+    <p>After this array has been stored you can call the values by their index: 0,1, or 2.</p>
+    <p>We will use this code to call the array:<br />
+        function sayHello() {<br />
+            var cars = ["Ford", "Chevy", "BMW"];<br />
+            var index = document.getElementById("index").value;<br />
+            <br />
+            document.write (cars[index]);<br />
+            }
+    </p>
+    <p>Pick one index to call the value of the car array</p>
+    <input type="text" id="index" value="number here">
+    <button onclick="sayHello()">Try it</button>
+    <p id="demo"></p>
+
+    <script type = "text/javascript">
+        function sayHello() {
+        var cars = ["Ford", "Chevy", "BMW"];
+        var index = document.getElementById("index").value;
+
+        document.write (cars[index]);
+        }
+    </script>
+
+</body>
+</html>
