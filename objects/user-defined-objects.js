@@ -20,14 +20,14 @@ function Person(name, eyeColor, age) { // We are basically creating an "Object t
     this.age = age;
     this.addHeight = addHeight; // A method made on line 28
 }
-// And then, create the Person Object:
-let person01 = new Person("Brenden", "Blue", 25);
-let person02 = new Person("Amy", "Green", 21);
-
 // Creating a function used inside of an object makes it a method
 function addHeight(tall) {
     this.height = tall;
 }
+// And then, create the Person Object:
+let person01 = new Person("Brenden", "Blue", 25);
+let person02 = new Person("Amy", "Green", 21);
+
 // You would add someone's height to a previously created object like this:
 person01.addHeight("5'11");
 
