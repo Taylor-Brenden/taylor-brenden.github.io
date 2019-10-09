@@ -32,4 +32,4 @@ function addHeight(tall) {
 person01.addHeight("5'11");
 
 // Output the results
-document.write(person01.name + "'s eyes are " + person01.eyColor + ", he/she is " + person01.age + " years old and he/she is " + person01.height);
+document.write(person01.name + "'s eyes are " + person01.eyeColor + ", he/she is " + person01.age + " years old and he/she is " + person01.height);
