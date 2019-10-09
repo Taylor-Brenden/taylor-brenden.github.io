@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<body>
+<h1>CIT 261</h1>
+<h2>Brenden Taylor</h2>
+<p><a href="/javascript.html">Week 2 Fluency: Javascript</a></p>
+<p><a href="/objects/objects.html">Week 3 Fluency: Javascript Objects</a></p>
+<script type = "text/javascript">
+var car = new Object();
+car.make = "Honda";
+car.model = "CRV";
+
+
+
+
+var motorcycle = { 
+    make: "Honda",
+    model: "CMX"
+}
+
+//How to Build an Object Constructor:
+
+function Person(name, eyeColor, age) { 
+    this.name = name;
+    this.eyeColor = eyeColor;
+    this.age = age;
+    this.addHeight = addHeight; 
+}
+// And then, create the Person Object:
+let person01 = new Person("Brenden", "Blue", 25);
+let person02 = new Person("Amy", "Green", 21);
+
+
+function addHeight(tall) {
+    this.height = tall;
+}
+
+person01.addHeight("5'11");
+
+
+document.write(person01.name + "'s eyes are " + person01.eyeColor + ", he/she is " + person01.age + " years old and he/she is " + person01.height);
+</script>
+</body>
+</html>
+
