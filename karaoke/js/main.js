@@ -4,7 +4,7 @@ var musicContainer = document.getElementById("music-info");
 btn.addEventListener("click", function() {
     var pull = new XMLHttpRequest();
     
-    pull.open('GET', '../api/music_list.json');
+    pull.open('GET', 'https://raw.githubusercontent.com/Taylor-Brenden/taylor-brenden.github.io/master/karaoke/api/music_list.json');
     
     pull.onload = function(){
         if (pull.status >= 200 && pull.status < 400) {
@@ -23,7 +23,7 @@ btn.addEventListener("click", function() {
 function renderHTML(data){
     var htmlString = "";
     
-    for (i = 0; i < 5; i++) {
+    for (i = 1; i < 6; i++) {
         htmlString += "<p>" + data[i].song + " is a song by " + data[i].artist;
         htmlString += "</p>";
     }
