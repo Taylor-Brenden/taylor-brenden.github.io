@@ -2,8 +2,19 @@
     opacity: 0;
 }
 
-
-
 li {
     transition: 1s;
+}
+
+@keyframes explosion {
+    from {width: 10px;}
+    to {width: 300px;}
+}
+
+.animation {
+    display: flex;
+    width: 300px;
+    animation-name: explosion;
+    animation-duration: 1s;
+    margin-left: 100px;
 }
