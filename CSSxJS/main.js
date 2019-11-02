@@ -12,6 +12,7 @@ if(! count) {
 }
 function nextStep() {
     let list = document.querySelectorAll("li");
+    let firework = document.querySelector("img");
     count++;
     if (count == 1) {
         list[1].classList.remove("hide");
@@ -21,5 +22,7 @@ function nextStep() {
     }
     if (count == 3) {
         list[3].classList.remove("hide");
+        firework.classList.remove("hide");
+        document.getElementById('img').className ='animation';
     }
 }
