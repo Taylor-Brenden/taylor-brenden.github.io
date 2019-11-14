@@ -26,13 +26,8 @@ function nextStep() {
         document.getElementById('img').className ='animation';
     }
 }
-//when touched, change background color
-window.ontouchstart = function backColor() {
-    let background = document.querySelector("body");
-    background.classList.add("bcolor");
-}
 //When button is pressed on phone, change color, go back when lifted off
-function mobileButtons(){
+window.ontouchstart = function mobileButtons(){
     var btn = document.querySelector('button');
 
     btn.ontouchstart = function btnPress() {
