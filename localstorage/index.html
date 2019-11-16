@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<h1>Local Storage Web APIs</h1>
+
+<script type="text/javascript">
+
+    //Store an object/associative array into localStorage API
+    let myObj = {
+        name: "Brenden",
+        eyeColor: "Blue",
+        age: 26
+    };
+                //Have to stringify it first 
+    let myObj_serialized = JSON.stringify(myObj);
+                //setItem stores the object
+    localStorage.setItem("myObj", myObj_serialized);
+                //getItem retrieves object
+                //Here I am parseing it so that it looks like a normal js object
+    let myObj_deserialized = JSON.parse(localStorage.getItem("myObj"));
+    console.log(myObj_deserialized);
+
+                //show the object
+    document.write(myObj.name + "'s eyes are " + myObj.eyeColor + " and he is " + myObj.age + " years old. <br>");
+
+
+    //Store arrays in localStorage API
+    let myArray = ["Princess Mononoke", "Laputa", "Grave of the Fireflies", "My Neighbor Totoro", "Spirited Away", "Kiki's Delivery Service", "Porco Rosso"];
+
+    let myArray_serialized = JSON.stringify(myArray);
+
+    localStorage.setItem("myArray", myArray_serialized);
+
+    let myArray_deserialized = JSON.parse(localStorage.getItem("myArray"));
+    console.log(myArray_deserialized);
+
+    document.write(myArray[0] + " is my most favorite Ghibli movie and " + myArray[2] + " is my third favorite.<br>");
+
+
+</script>
+
+</body>
+</html>
