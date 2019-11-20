@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<meta charset="UTF-8">
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+</head>
+
+<body>
+<h1>HTML5 Tags: Video, Audio, and Canvas</h1>
+<p>Simple embedded video with controls attribute and width specified.</p>
+<video src="media/Montage_Shorter.mov" controls width="700"></video>
+<br />
+<p>Simple embedded audio with controls attribute</p>
+<audio src="media/Bond v07.wav" controls></audio>
+<p>A canvas with a diagonal line drawn in it with coordinates</p>
+<canvas id="myCanvas" width="400" height="200" style="border:1px solid #000000;"></canvas>
+
+<script>
+
+var canvas = document.getElementById("myCanvas");
+var ctx = canvas.getContext("2d");
+ctx.moveTo(0,0);
+ctx.lineTo(400,200);
+ctx.stroke();
+
+</script>
+
+</body>
+</html>
