@@ -33,6 +33,7 @@ request.onload = function() {
         }
         event.ontouchend = function lift() {
           event.classList.remove("secondary");
+          event.classList.add("secondaryTrans");
         }
         //create an h1 for title of event
         const h1 = document.createElement('h1')
