@@ -1,0 +1,67 @@
+/*Font settings */
+h1 { font-family: Oswald; font-size: 24px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 26.4px; color: rgb(10, 82, 10);} 
+h3 { font-family: Oswald; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 700; line-height: 15.4px; } 
+p { font-family: Oswald; font-size: 14px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 20px; } 
+blockquote { font-family: Oswald; font-size: 21px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 30px; } 
+pre { font-family: Oswald; font-size: 13px; font-style: normal; font-variant: normal; font-weight: 400; line-height: 18.5667px; }
+
+body {
+    background-color: #c5dbc3;
+}
+.logo {
+    max-width: 100%;
+    height: auto;
+}
+.up {
+    text-align: center;
+}
+.event {
+    border-style: groove;
+}
+.title {
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.date {
+    margin-bottom: 0px;
+}
+.summary {
+    margin-top: 5px;
+}
+#btnDiv {
+    text-align: center;
+    margin-bottom: 5px;
+}
+button {
+  background-color: rgb(10, 82, 10);
+  border: none;
+  color: white;
+  padding: 10px 26px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+/*Transition and Transform*/
+.secondary {
+    background-color: rgb(184, 184, 184);
+    transition: 0.3s;
+    transform: scale(0.95);
+}
+
+/*Animation*/
+@keyframes reveal {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+
+.animation div {
+    animation: reveal 0.8s ease-in;
+    animation-fill-mode: both;
+}
+.animation div:nth-child(1) {animation-delay: 0s}
+.animation div:nth-child(2) {animation-delay: 0.3s}
+.animation div:nth-child(3) {animation-delay: 0.6s}
+.animation div:nth-child(4) {animation-delay: 0.9s}
